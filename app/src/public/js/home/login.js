@@ -6,8 +6,6 @@ const id = document.querySelector("#id"),
 
 
 
-console.log(id);
-console.log("hello");
 
 loginBtn.addEventListener("click", login);
 
