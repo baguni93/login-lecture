@@ -8,9 +8,9 @@ class User{
         this.body = body;
     }
 
-    login(){
+   async login(){
         const client = this.body;
-        const {id, psword} = UserStorage.getUserInfor(client.id);
+        const {id, psword} = await UserStorage.getUserInfor(client.id);
         
         if(id)
         {
